@@ -19,7 +19,7 @@ class Program
                 int y = Int32.Parse(line.Split(' ')[1]);
                 while (i <= max)
                 {
-                    if (i % (x * y) == 0)
+                    if (i % x == 0 && i % y == 0)
                         print += "FB";
                     else if (i % x == 0)
                         print += "F";
